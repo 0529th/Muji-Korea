@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>MUJI | prototype</title>
+	<meta charset="UTF-8">
+	<!-- 파비콘 -->
+    <link rel="short icon" type="image/x-icon" href="./images/favicon/favicon.png">
+	<!-- 메인 CSS STYLE -->
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="./css/fontawesome.css">
+	<!-- modal popup -->
+	<script src="./js/jquery.modal-01.min.js"></script>
+	<script src="./js/jquery.modal-02.min.js"></script>
+	<link rel="stylesheet" href="./css/jquery.modal.min.css">	
+	<!-- Slick 슬라이더 -->
+	<link rel="stylesheet" type="text/css" href="./css/slick.css">
+	<link rel="stylesheet" href="./css/slick.min.css">
+	<link rel="stylesheet" href="./css/slick-theme.min.css">	
+	<script type="text/javascript" src="./js/slick.min.js"></script>
+</head>
+
+<body>
+<div class="highlight highlight_03">
+		<img src="./images/check3.png" alt="chk"><br>
+		<span>Viewport 1024px 이하<br>모바일 모드 전환</span>
+</div>
+<div id="wrap">
+<!-- header -->
+	<header>
+		<h1><a href="#"><img src="./images/logo.png" alt="logo"></a></h1>
+
+        <!-- header / searchForm -->
+		<div id="searchForm">
+		<!-- header / searchForm / module -->
+			<div class="d5">
+				<form>
+					<input type="text" placeholder="김지은 / 순수 하드코딩으로 제작한 프로토타입입니다. ">
+					<button type="submit"></button>
+				</form>
+			</div>
+		<!-- header / searchForm / module END -->
+		</div> <!-- id=searchform -->
+
+
+		<nav id="util">
+			<ul>
+				<li>
+					<a href="javascript:alert('프로토타입 제작 중입니다.');">
+						<img src="./images/util_01.png" alt="util_01" title="매장안내">
+					</a>
+				</li>
+				<li>
+					<a href="#login_modal">
+						<img src="./images/util_02.png" alt="util_02" title="로그인">
+					</a>
+				</li>
+				<li>
+					<a href="javascript:alert('프로토타입 제작 중입니다.');">
+						<img src="./images/util_03.png" alt="util_03" title="장바구니">
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="highlight highlight_01">
+			<img src="./images/check.png" alt="chk"><span>로그인 모달 팝업 UI</span>
+		</div>
+
+		<nav id="gnb">
+	<!-- gnb / module -->
+			<ul id="nav" class="dropdown dropdown-linear dropdown-columnar">
+				<li class="dir">인기상품
+					<ul>
+						<li class="dir">의복/신발/패션잡화
+							<ul>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">MUJI LABO</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">남성복</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">여성복</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">아동복 · 마터니티</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">이너웨어</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">가방 · 신발</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">액세서리 · 양말 · 우산</a></li>
+							</ul>
+						</li>
+						<li class="dir">생활잡화
+							<ul>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">패브릭</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">가구 · 인테리어</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">주방 · 생활용품</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">헬스&뷰티 · 아로마</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">화장품</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">전자제품 · 기프트</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">문구</a></li>
+							</ul>
+						</li>
+						<li class="dir">식품
+							<ul>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">과자 · 음료 · 소스</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="dir">신상품
+					<ul>
+						<li class="dir">의복/신발/패션잡화
+							<ul>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">MUJI LABO</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">남성복</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">여성복</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">아동복 · 마터니티</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">이너웨어</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">가방 · 신발</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">액세서리 · 양말 · 우산</a></li>
+							</ul>
+						</li>
+						<li class="dir">생활잡화
+							<ul>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">패브릭</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">가구 · 인테리어</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">주방 · 생활용품</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">헬스&뷰티 · 아로마</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">화장품</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">전자제품 · 기프트</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">문구</a></li>
+							</ul>
+						</li>
+						<li class="dir">식품
+							<ul>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">과자 · 음료 · 소스</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="dir">온라인 한정사이즈
+				<ul>
+						<li class="dir">의복/신발/패션잡화
+							<ul>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">MUJI LABO</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">남성복</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">여성복</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">아동복 · 마터니티</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">이너웨어</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">가방 · 신발</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">액세서리 · 양말 · 우산</a></li>
+							</ul>
+						</li>
+						<li class="dir">생활잡화
+							<ul>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">패브릭</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">가구 · 인테리어</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">주방 · 생활용품</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">헬스&뷰티 · 아로마</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">화장품</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">전자제품 · 기프트</a></li>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">문구</a></li>
+							</ul>
+						</li>
+						<li class="dir">식품
+							<ul>
+								<li><a href="javascript:alert('프로토타입 제작 중입니다.');">과자 · 음료 · 소스</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="javascript:alert('프로토타입 제작 중입니다.');">가격 인하</a></li>
+				<li><a href="javascript:alert('프로토타입 제작 중입니다.');">가격 한정</a></li>
+				<li><a href="javascript:alert('프로토타입 제작 중입니다.');">의복잡화 아울렛</a></li>
+				<li><a href="javascript:alert('프로토타입 제작 중입니다.');">생활잡화 아울렛</a></li>
+			</ul>
+<!-- gnb / module END -->
+		<div class="gnb_new">NEW</div>
+		</nav>
+	</header>
+
+
+<!-- side_menu -->
+	<div id="side_menu">
+		<div id="side_menu_nav">
+		<h3>의복/신발/패션잡화</h3>
+		<ul>
+			<li><a href="javascript:alert('프로토타입 제작 중입니다.');">MUJI LABO</a></li>
+			<li><a href="javascript:alert('프로토타입 제작 중입니다.');">남성복</a></li>
+			<li><a href="javascript:alert('프로토타입 제작 중입니다.');">여성복</a></li>
+			<li><a href="javascript:alert('프로토타입 제작 중입니다.');">아동복 · 마터니티</a></li>
+			<li><a href="javascript:alert('프로토타입 제작 중입니다.');">이너웨어</a></li>
+			<li><a href="javascript:alert('프로토타입 제작 중입니다.');">가방 · 신발</a></li>
+			<li><a href="javascript:alert('프로토타입 제작 중입니다.');">액세서리 · 양말 · 우산</a></li>
+		</ul>
+		<hr>
+		<h3>생활잡화</h3>
+		<ul>
+			<li><a href="javascript:alert('프로토타입 제작 중입니다.');">패브릭</a></li>
+			<li><a href="javascript:alert('프로토타입 제작 중입니다.');">가구 · 인테리어</a></li>
+			<li><a href="javascript:alert('프로토타입 제작 중입니다.');">주방 · 생활용품</a></li>
+			<li><a href="javascript:alert('프로토타입 제작 중입니다.');">헬스 & 뷰티 · 아로마</a></li>
+			<li><a href="javascript:alert('프로토타입 제작 중입니다.');">화장품</a></li>
+			<li><a href="javascript:alert('프로토타입 제작 중입니다.');">전자제품 · 기프트</a></li>
+			<li><a href="javascript:alert('프로토타입 제작 중입니다.');">문구</a></li>
+		</ul>
+		<hr>
+		<h3>식품</h3>
+		<ul>
+			<li><a href="javascript:alert('프로토타입 제작 중입니다.');">과자 · 음료 · 소스</a></li>
+		</ul>
+		</div> <!-- id=side_menu_nav -->
+	</div> <!-- id=side_menu -->
+
+
+
+<!-- content -->
+	<div id="content">
+
+		<div id="notice">
+			<p>[공지사항]</p>
+			<ul class="notice_ul_01">
+				<li><a href="javascript:alert('프로토타입 제작 중입니다.');">[공지사항] MUJI Passport 2021년도 마일 및 스테이지 리셋 알림</a></li>
+				<li><a href="javascript:alert('프로토타입 제작 중입니다.');">[공지사항] 거리두기 4단계 격상으로 인한 일부매장 영업시간 일시적 변경 안내의 건 - 11월기준</a></li>
+				<li><a href="javascript:alert('프로토타입 제작 중입니다.');">[공지사항] 가구 | 리빙다이닝 커버 입고 지연 안내</a></li>
+				<li><a href="javascript:alert('프로토타입 제작 중입니다.');">[RECRUIT] 무인양품 함께할 STAFF를 모집하고 있습니다.</a></li>
+			</ul>
+			<ul class="notice_ul_02">
+				<li>2021.12.13</li>
+				<li>2021.11.27</li>
+				<li>2021.11.01</li>
+				<li>2021.10.27</li>
+			</ul>
+		</div> <!-- id=notice -->
+
+
+		<div id="intro">
+			<video class="intro_video_01" src="./video/muji.mp4" muted autoplay controls loop poster="./video/img/muji.png"></video>
+		</div> <!-- id=intro -->
+
+
+
+
+			<script>
+				var img_spin_01 = Math.floor(Math.random()*4)+1;
+				document.write(
+					"<div class='banner'><img src='./images/banner_0" + img_spin_01 + ".png' alt='banner' width='100%'><span class='banner_txt'>새로고침(F5) 시, 이미지가 자동으로 변경됩니다. (자바스크립트 Math.random(); 활용)</span><div class='highlight highlight_02'><img src='./images/check2.png' alt='chk'><span>새로고침(F5)을 눌러주세요.</span></div></div>"
+				);
+			</script>
+
+			
+	
+		
+
+    <!-- content / content_01 -->
+		<section id ="content_01">
+			<h2>기획전</h2>
+			<ul>
+				<li class="content_01_1">
+					<a href="javascript:alert('프로토타입 제작 중입니다.');">
+						<img src="./images/content_01_1-02.png" alt="content_01_1-02">
+						<span class="imgcaption_3">천연소재</span>
+					</a>
+				</li>
+				<li class="content_01_2">
+					<a href="javascript:alert('프로토타입 제작 중입니다.');">
+						<img src="./images/content_01_2-02.png" alt="content_01_2-02">
+						<span class="imgcaption_3">기간한정기획가 (~11/25)</span>
+					</a>
+				</li>
+				<li class="content_01_3">
+					<a href="javascript:alert('프로토타입 제작 중입니다.');">
+						<img src="./images/content_01_3-02.png" alt="content_01_3-02">
+						<span class="imgcaption_3">이 겨울을, 아우터로 따뜻하게</span>
+					</a>
+				</li>
+			</ul>
+			<ul>
+				<li class="content_01_4">
+					<a href="javascript:alert('프로토타입 제작 중입니다.');">
+						<img src="./images/content_01_4-02.png" alt="content_01_4">
+						<span class="imgcaption_3">언제 어디서나, 나와 함께 (~11/25)</span>
+					</a>
+				</li>
+				<li class="content_01_5">
+					<a href="javascript:alert('프로토타입 제작 중입니다.');">
+						<img src="./images/content_01_5-02.png" alt="content_01_5">
+						<span class="imgcaption_3">방한용품으로 따뜻한 겨울을 보내세요!</span>
+					</a>
+				</li>
+				<li class="content_01_6">
+					<a href="javascript:alert('프로토타입 제작 중입니다.');">
+						<img src="./images/content_01_6-02.png" alt="content_01_6">
+						<span class="imgcaption_3">스르륵 잠드는 시간의 행복, 침구 고르기</span>
+					</a>
+				</li>
+			</ul>
+		</section>
+
+
+	<!-- content / content_02 -->
+		<section id ="content_02">
+			<h2>MD's pick!</h2>
+    <!-- slider -->
+            <div class="page-wrapper">
+                <div class="post-slider">
+                    <div class="fas_01 prev_01" id="prev-01">
+                        <img src="./images/prev_01.png" alt="prev_01">
+                    </div>
+                    <div class="fas_01 next_01" id="next-01">
+                        <img src="./images/next_01.png" alt="next_01">
+                    </div>
+                    <div class="post-wrapper-4p post-wrapper-01">
+                        <div>
+                            <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                                <img src="./images/content_02_1-03.png" alt="content_02_1-03">
+                                <span class="imgcaption_4_03 ">[남녀공용] 발수 포케터블&nbsp;&middot;&nbsp;리버시블 다운 베스트</span>
+                                <span class="imgcaption_4_04">79,900원</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                                <img src="./images/content_02_2-02.png" alt="content_02_2-02">
+                                <span class="imgcaption_4_03">경량 포케터블&nbsp;&middot;&nbsp;노 칼라 다운 베스트</span>
+                                <span class="imgcaption_4_04">39,900원</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                                <img src="./images/content_02_3-02.png" alt="content_02_3-02">
+                                <span class="imgcaption_4_03">경량 포케터블&nbsp;&middot;&nbsp;다운 재킷</span>
+                                <span class="imgcaption_4_04">59,900원</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                                <img src="./images/content_02_4-03.png" alt="content_02_4-03">
+                                <span class="imgcaption_4_03">울 혼방 후드&nbsp;&middot;&nbsp;바깥쪽미튼 장갑<br>
+                                </span>
+                                <span class="imgcaption_4_04">19,900원</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                                <img src="./images/content_02_5.png" alt="content_02_5">
+                                <span class="imgcaption_4_03">인도면 테리&nbsp;&middot;&nbsp;원피스</span>
+                                <span class="imgcaption_4_04">34,900원</span>
+                        </a>
+                        </div>
+                        <div>
+                            <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                                <img src="./images/content_02_6.png" alt="content_02_6">
+                                <span class="imgcaption_4_03">넥크레스 피어드 스탠드&nbsp;&middot;&nbsp;양면타입</span>
+                                <span class="imgcaption_4_04">29,900원</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                                <img src="./images/content_02_7.png" alt="content_02_7">
+                                <span class="imgcaption_4_03">의류용 클리너</span>
+                                <span class="imgcaption_4_04">4,900원</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                                <img src="./images/content_02_8.png" alt="content_02_8">
+                                <span class="imgcaption_4_03">깃털&nbsp;&middot;&nbsp;베개&nbsp;&middot;&nbsp;50X70</span>
+                                <span class="imgcaption_4_04">152,100원</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+	<!-- content / content_03 -->
+		<section id ="content_03">
+			<h2>SALE</h2>
+			<ul>
+				<li>
+					<a href="javascript:alert('프로토타입 제작 중입니다.');">
+						<img src="./images/content_03_1-02.png" alt="content_03_1-02">
+						<span class="imgcaption_3">생활잡화</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:alert('프로토타입 제작 중입니다.');">
+						<img src="./images/content_03_2-02.png" alt="content_03_2-02">
+						<span class="imgcaption_3">의복잡화</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:alert('프로토타입 제작 중입니다.');">
+						<img src="./images/content_03_3-02.png" alt="content_03_3-02">
+						<span class="imgcaption_3">가격인하</span>
+					</a>
+				</li>
+			</ul>
+		</section>
+
+
+	<!-- content / content_04 -->
+		<section id ="content_04">
+			<h2>특집</h2>
+			<ul>
+				<li>
+					<a href="javascript:alert('프로토타입 제작 중입니다.');">
+						<img src="./images/content_04_1-02.png" alt="content_04_1-02">
+						<span class="imgcaption_4_02">아로마 디퓨저와 에센셜 오일</span>
+						<span class="imgcaption_4_01">공간의 향기를 바꾸다. 기분 전환이 필요할 때 향이 주는 행복을 느껴보세요.</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:alert('프로토타입 제작 중입니다.');">
+						<img src="./images/content_04_2-02.png" alt="content_04_2-02">
+						<span class="imgcaption_4_02">새로운 시작, 다이어리</span>
+						<span class="imgcaption_4_01">취향에 맞는 구성으로 선택해 사용해 보세요!</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:alert('프로토타입 제작 중입니다.');">
+						<img src="./images/content_04_3-02.png" alt="content_04_3-02">
+						<span class="imgcaption_4_02">MUJI together</span>
+						<span class="imgcaption_4_01">지구를 생각하는 마음은 곧 우리의 가족, 이웃을 생각하는 마음입니다.</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:alert('프로토타입 제작 중입니다.');">
+						<img src="./images/content_04_4-02.png" alt="content_04_4-02">
+						<span class="imgcaption_4_02">발열면 이너웨어</span>
+						<span class="imgcaption_4_01">발열면 이너웨어. 천연소재로 따뜻합니다.</span>
+					</a>
+				</li>
+			</ul>
+		</section>
+
+
+	<!-- content / content_05 -->
+		<section id ="content_05">
+			<h2>신상품</h2>
+    <!-- slider -->
+            <div class="page-wrapper">
+                <div class="post-slider">
+                    <div class="fas_01 prev_01" id="prev-02">
+                        <img src="./images/prev_01.png" alt="prev_01">
+                    </div>
+                    <div class="fas_01 next_01" id="next-02">
+                        <img src="./images/next_01.png" alt="next_01">
+                    </div>
+                    <div class="post-wrapper-4p post-wrapper-02">
+                        <div>
+                            <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                                <img src="./images/content_05_1-03.png" alt="content_05_1-03">
+                                <span class="imgcaption_4_01">
+                                    베개 커버&nbsp;&middot;&nbsp;50X70&nbsp;&middot;&nbsp;멜란지 라이트 브라운&nbsp;&middot;&nbsp;면 저지 자투리 솜
+                                </span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                                <img src="./images/content_05_2-02.png" alt="content_05_2-02">
+                                <span class="imgcaption_4_01">
+                                    푹신 슬리퍼&nbsp;&middot;&nbsp;M&nbsp;&middot;&nbsp;멜란지 라이트 브라운&nbsp;&middot;&nbsp;자투리 솜 저지
+                                </span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                                <img src="./images/content_05_3-02.png" alt="content_05_3-02">
+                                <span class="imgcaption_4_01">
+                                    쿠션 커버&nbsp;&middot;&nbsp;43 X 43&nbsp;&middot;&nbsp;브릭&nbsp;&middot;&nbsp;셔닐
+                                </span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                                <img src="./images/content_05_4-03.png" alt="content_05_4-03">
+                                <span class="imgcaption_4_01">
+                                    TPU&nbsp;&middot;&nbsp;투명 케이스&nbsp;&middot;&nbsp;19.5X16cm
+                                </span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                                <img src="./images/content_05_1-03.png" alt="content_05_1-03">
+                                <span class="imgcaption_4_01">
+                                    베개 커버&nbsp;&middot;&nbsp;50X70&nbsp;&middot;&nbsp;멜란지 라이트 브라운&nbsp;&middot;&nbsp;면 저지 자투리 솜
+                                </span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                                <img src="./images/content_05_2-02.png" alt="content_05_2-02">
+                                <span class="imgcaption_4_01">
+                                    푹신 슬리퍼&nbsp;&middot;&nbsp;M&nbsp;&middot;&nbsp;멜란지 라이트 브라운&nbsp;&middot;&nbsp;자투리 솜 저지
+                                </span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                                <img src="./images/content_05_3-02.png" alt="content_05_3-02">
+                                <span class="imgcaption_4_01">
+                                    쿠션 커버&nbsp;&middot;&nbsp;43 X 43&nbsp;&middot;&nbsp;브릭&nbsp;&middot;&nbsp;셔닐
+                                </span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                                <img src="./images/content_05_4-03.png" alt="content_05_4-03">
+                                <span class="imgcaption_4_01">
+                                    TPU&nbsp;&middot;&nbsp;투명 케이스&nbsp;&middot;&nbsp;19.5X16cm
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</section>
+
+
+	<!-- content / content_06 -->
+		<section id ="content_06">
+			<h2>온&middot;오프라인 서비스 안내</h2>
+			<p>
+				<img src="./images/content_06_1.png" alt="content_06_1" usemap="#content_06_imagemap">
+				<map id="content_06_imagemap" name="content_06_imagemap">
+					<area shape="rect" coords="22,30,170,195" href="#" alt="RS">
+					<area shape="rect" coords="220,30,365,195" href="#" alt="RS">
+					<area shape="rect" coords="410,30,570,195" href="#" alt="RS">
+					<area shape="rect" coords="600,30,765,195" href="#" alt="RS">
+					<area shape="rect" coords="820,30,945,195" href="#" alt="RS">
+					<area shape="rect" coords="22,208,170,370" href="#" alt="RS">
+					<area shape="rect" coords="220,208,365,370" href="#" alt="RS">
+				</map>
+			</p>
+		</section>
+
+
+	<!-- content / content_07 -->
+		<section id="content_07">
+			<h2>Mail magazine</h2>
+
+			<div class="content_07_leftbox">
+				<a href="javascript:alert('프로토타입 제작 중입니다.');">
+					<img src="./images/content_07_1.png" alt="content_07_1">
+				</a>
+			</div> <!-- class=content_07_leftbox -->
+
+			<div class="content_07_rightbox">
+				<div class="content_07_rightbox_upperbox">
+					<ul>
+						<li><a href="javascript:alert('프로토타입 제작 중입니다.');"><img src="./images/content_07_2.png" alt="content_07_2"></a></li>
+						<li><a href="javascript:alert('프로토타입 제작 중입니다.');"><img src="./images/content_07_3.png" alt="content_07_3"></a></li>
+					</ul>
+				</div>  <!-- class=content_07_rightbox_upperbox -->
+
+				<div class="content_07_rightbox_lowerbox">
+					<ul>
+						<li><a href="javascript:alert('프로토타입 제작 중입니다.');"><img src="./images/content_07_4.png" alt="content_07_4"></a></li>
+						<li><a href="javascript:alert('프로토타입 제작 중입니다.');"><img src="./images/content_07_5.png" alt="content_07_5"></a></li>
+					</ul>
+				</div> <!-- class=content_07_rightbox_lowerbox -->
+
+			</div> <!-- class=content_07_rightbox -->
+		</section>
+
+
+	<!-- content / content_08 -->
+		<section id="content_08">
+			<h2>trip</h2>
+			<p>
+				<a href="javascript:alert('프로토타입 제작 중입니다.');">
+					<img src="./images/content_08_1.png" alt="content_08_1">
+				</a>
+			</p>
+		</section>
+
+	<!-- content / content_09 -->
+		<section id ="content_09">
+			<h2>지속 가능한 생활</h2>
+		 <!-- slider -->
+            <div class="page-wrapper">
+                <div class="post-slider">
+                    <div class="fas_02 prev_02" id="prev-03">
+                        <img src="./images/prev_02.png" alt="prev_01">
+                    </div>
+                    <div class="fas_02 next_02" id="next-03">
+                        <img src="./images/next_02.png" alt="next_01">
+                    </div>
+                    <div class="post-wrapper-4p post-wrapper-03">
+                        <div>
+                            <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                                <img src="./images/content_09_1-03.png" alt="content_09_1-03">
+                                <span class="imgcaption_4_02">다회용품 사용하기</span>
+                                <span class="imgcaption_4_01">일회용품을 줄이기 위해 일상에서 사용하기 좋은 아이템을 소개합니다.</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                                <img src="./images/content_09_2-02.png" alt="content_09_2-02">
+                                <span class="imgcaption_4_02">무인양품의 '마이 백'</span>
+                                <span class="imgcaption_4_01">사람과 자연 사이의 더욱 좋은 관계를 생각하는 무인양품은, 생활속에서 발생하는 여러 종류의 소모품들을 ...</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                                <img src="./images/content_09_3-02.png" alt="content_09_3-02">
+                                <span class="imgcaption_4_02">패키지 플라스틱의 삭감 진행</span>
+                                <span class="imgcaption_4_01">무인양품에서는 지구 자원의 순환 및 폐기물 삭감을 위하여 다양한 대처 방안을 진행하고 있습니다.</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                                <img src="./images/content_09_4-03.png" alt="content_09_4-03">
+                                <span class="imgcaption_4_02">무인양품의 상품 개발</span>
+                                <span class="imgcaption_4_01">무인양품은 창립 당초부터 [철저한 생산 과정의 간소화], [소재의 선택], [포장의 간략화]라는 3가지를 지키면서...</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                                <img src="./images/content_09_5.png" alt="content_09_5">
+                                <span class="imgcaption_4_02">무인양품의 행보</span>
+                                <span class="imgcaption_4_01">무인양품은 1980년 설립되었으며, 제품의 생산 과정을 철저히 합리화하여 간결하고 기분 좋은 상품을 만듭니다.</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                                <img src="./images/content_09_6.png" alt="content_6">
+                                <span class="imgcaption_4_02">비목재 펄프로 만든 티슈&nbsp;&middot;&nbsp;페이퍼</span>
+                                <span class="imgcaption_4_01">지속가능한 환경을 생각하며 생육이 빠른 식물섬유(대나무)로 만들었습니다.</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                                <img src="./images/content_09_7.png" alt="content_09_7">
+                                <span class="imgcaption_4_02">세계 속의 '이동 판매 버스'</span>
+                                <span class="imgcaption_4_01">무인양품은 '기분 좋은 생활과 사회'의 실현을 위해 다양한 방안을 진행하고 있습니다.</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</section>
+
+
+	<!-- content / content_10 -->
+		<section id ="content_10">
+			<h2>가전&middot;생활 시리즈</h2>
+        <!-- slider -->
+            <div class="page-wrapper">
+                <div class="post-slider">
+                    <div class="fas_02 prev_02" id="prev-04">
+                        <img src="./images/prev_02.png" alt="prev_02">
+                    </div>
+                    <div class="fas fas_02 next_02" id="next-04">
+                        <img src="./images/next_02.png" alt="next_02">
+                    </div>
+                    <div class="post-wrapper-3p post-wrapper-04">
+                        <div>
+                            <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                                <img src="./images/content_10_1-03.png" alt="content_10_1-03">
+                                <span class="imgcaption_3">스테인리스 바스켓</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                                <img src="./images/content_10_2-02.png" alt="content_10_2-02">
+                                <span class="imgcaption_3">선풍기</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                                <img src="./images/content_10_3-03.png" alt="content_10_3-03">
+                                <span class="imgcaption_3">키친 가전</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                                <img src="./images/content_10_4.png" alt="content_10_4">
+                                <span class="imgcaption_3">행거&nbsp;&middot;&nbsp;세탁용품</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+	</div>
+
+<!-- footer -->
+	<footer>
+		<div id="footer_01">
+			<ul>
+				<li><a href="javascript:alert('프로토타입 제작 중입니다.');">About MUJI</a></li>
+				<li><a href="javascript:alert('프로토타입 제작 중입니다.');">매장정보</a></li>
+				<li><a href="javascript:alert('프로토타입 제작 중입니다.');">찾아오시는 길</a></li>
+				<li><a href="javascript:alert('프로토타입 제작 중입니다.');">고객센터</a></li>
+			</ul>
+			<form>
+				<a href="javascript:alert('프로토타입 제작 중입니다.');"><input type="button" value="Global Site&nbsp;&nbsp;&gt;"></a>
+			</form>
+		</div> <!-- id=footer_01 -->
+
+		<div id="footer_02">
+			<a href="javascript:alert('프로토타입 제작 중입니다.');"><img src="./images/footer_02_1.png" alt="footer_02_1"></a>
+		</div> <!-- id=footer_02 -->
+
+		<div id="footer_03">
+			<ul>
+				<li><a href="javascript:alert('프로토타입 제작 중입니다.');">LECS안내 및 문의</a></li>
+				<li><a href="javascript:alert('프로토타입 제작 중입니다.');">롯데쇼핑e커머스사업부 소개</a></li>
+				<li><a href="javascript:alert('프로토타입 제작 중입니다.');"><b>개인정보 처리방침</b></a></li>
+				<li><a href="javascript:alert('프로토타입 제작 중입니다.');">이용약관</a></li>
+				<li><a href="javascript:alert('프로토타입 제작 중입니다.');">청소년보호방침</a></li>
+				<li><a href="javascript:alert('프로토타입 제작 중입니다.');">회원가입/탈퇴</a></li>
+			</ul>
+		</div><!-- id=footer_03 -->
+
+		<div id="footer_04">
+			<p>
+				<span>
+				롯데쇼핑 주식회사 대표이사 김희태<br>
+				서울특별시 송파구 올림픽로 300 롯데월드 타워 26층<br>
+				사업자등록번호 : 529-85-00774 (롯데쇼핑(주) e커머스사업부)<br>
+				통신판매업 신고 : 2019-서울송파-0158<br>
+				호스팅 서비스 사업자 : 롯데쇼핑(주) e커머스사업부
+				</span>
+			</p>
+
+			<p>
+				<ins><b>고객만족센터</b> : 1577-2892</ins> muji@lotte.net
+				<br>
+				<span>MUJI 온라인스토어는 롯데 LECS(www.lecs.com)를 이용하고 있습니다.</span>
+			</p>
+
+			<p>
+				copyright LOTTE SHOPPING Co., Ltd. e-commerce Business Division All Right reserved.
+			</p>
+
+		</div> <!-- id=footer_04 -->
+
+		<div id="footer_05">
+			<form>
+				<b>콘텐츠산업진흥법에 의한 콘텐츠보호안내</b><a href="javascript:alert('프로토타입 제작 중입니다.');"><input type="button" value="자세히보기"></a><br>
+				<b>서울보증보험 구매 안전서비스 (쇼핑보증보험)</b><a href="javascript:alert('프로토타입 제작 중입니다.');"><input type="button" value="서비스 가입사실 확인"></a>
+			</form>
+			<p>
+			<span>
+				고객님의 안전거래를 위해 현금 등으로 결제 시 결제금액의 전액에 대해 저희 쇼핑몰에서 가입한 소비자 피해 보상보험 서비스를 이용하실 수 있습니다.
+			</span>
+			</p>
+		</div> <!-- id=footer_05 -->
+	</footer>
+
+	<!-- aside -->
+    <aside>
+        <div id="aside_top">
+            <a href="#"><img src="./images/top_01.png" alt="top"></a>
+        </div> <!-- id=aside_top -->
+    </aside>
+
+</div><!-- id=wrap -->
+
+
+<!-- login modal -->
+<div id="login_modal" class="modal">
+    <div id="login_modal_logo"><img src="./images/popup_login_logo.png" alt="logo"></div>
+
+	<!-- tap menu -->
+    <div class="tabMenu">
+        <input type="radio" name="a" id="tab_01" tabindex="1" checked>
+        <input type="radio" name="a" id="tab_02" tabindex="2">
+  
+        <div class="tabMenu-nav">
+            <label for="tab_01">회원</label>
+            <label for="tab_02">비회원</label>
+        </div>
+
+        <div class="tabMenu-content tab-01">
+        <!-- member login modal -->  
+            <div id="login_modal_wrap">
+                <form id="loginForm">
+                    <p class="chkBox">
+                        <input type="checkbox" value="chk_01" name="chk_01"> 아이디 저장
+                    </p>
+                    <p class="inputBox input_id">
+                        <input type="text" placeholder="아이디" required="required" autofocus="autofocus">
+                    </p>    
+                    <p class="inputBox input_password">
+                        <input type="password" placeholder="비밀번호" required="required">
+                    </p>
+                    <p class="submitBox">
+                        <input type="submit" value="로그인">
+                    </p>
+                </form>   
+
+                <div id="subLink">
+                    <p class="subLink_left">
+                        <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                            아이디 찾기 >
+                        </a>
+                        <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                            비밀번호 찾기 >
+                        </a>
+                    </p>
+                    <p class="subLink_right">
+                        <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                            L.POINT 회원가입 >
+                        </a>
+                    </p>
+                </div> <!-- id=subLink -->
+
+                <div id="siteLogin">
+                    <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                        <img src="./images/popup_login_naver-03.png" alt="naver">
+                    </a>
+                    <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                        <img src="./images/popup_login_kakaotalk-03.png" alt="kakao">
+                    </a>
+                    <a href="javascript:alert('프로토타입 제작 중입니다.');">
+                        <img src="./images/popup_login_facebook-03.png" alt="facebook">
+                    </a>
+                </div> <!-- id-siteLogin-->
+            </div> <!-- id=login_modal_wrap -->
+        </div> <!-- class=tabMenu-content tab-01 -->
+  
+  
+        <div class="tabMenu-content tab-02">
+        <!-- nonmenber login modal -->
+            <div id="login_modal_wrap">
+                <form id="loginForm">
+                    <p class="chkBox">
+                        주문번호와 이메일 주소를 입력해주세요.
+                    </p>
+                    <p class="inputBox input_id">
+                        <input type="text" placeholder="주문번호" required="required" autofocus="autofocus">
+                    </p>    
+                    <p class="inputBox input_email">
+                        <input type="email" placeholder="이메일" required="required">
+                    </p>
+                    <p class="submitBox">
+                        <input type="submit" value="주문조회">
+                    </p>
+                </form>   
+            </div> <!-- id=login_modal_wrap -->
+        </div> <!-- class=tabMenu-content tab-02 -->
+    </div>  <!-- class=tabMenu -->
+</div> <!-- id=login_modal -->
+
+
+<!-- 모바일 전환 modal -->
+<div id="mobileModal"> 
+	<div class="popup">
+		<h3><img src="./images/logo.png" alt="logo"></h3>
+		<p>
+			PC버전 페이지는 1024px 미만의 해상도를 지원하지 않습니다. 모바일 모드로 전환하세요.
+		</p>
+		<button class="mobile_btn"><a href="./m/index.html">모바일 모드 바로가기<span>&gt;</span></a></button>
+	</div>
+</div>
+<!-- slider -->
+<script>
+		$( document ).ready(function() {
+
+			if (Mobile() && sessionStorage.getItem("isMobile") != 'Y') {
+				location.href="./m/index.html";
+				sessionStorage.setItem("isMobile", "Y");
+			}
+
+            $('.banner_slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                nextArrow:$('#next-banner'),
+                prevArrow:$('#prev-banner'),
+                dots: true,
+                fade:true
+			});
+
+			$('.post-wrapper-01').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                nextArrow:$('#next-01'),
+                prevArrow:$('#prev-01'),
+			});
+
+			$('.post-wrapper-02').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                nextArrow:$('#next-02'),
+                prevArrow:$('#prev-02'),
+			});
+
+      		$('.post-wrapper-03').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                nextArrow:$('#next-03'),
+                prevArrow:$('#prev-03'),
+			});
+
+			$('.post-wrapper-04').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                nextArrow:$('#next-04'),
+                prevArrow:$('#prev-04'),
+			});
+		});
+
+		$('a[href="#login_modal"]').click(function(event) {
+		 event.preventDefault();
+
+			$(this).modal({
+			 fadeDuration: 250
+			 });
+		});
+
+		function Mobile() {
+			console.log(navigator.userAgent)
+			return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+		}
+</script>
+
+
+
+</body>
+</html>
